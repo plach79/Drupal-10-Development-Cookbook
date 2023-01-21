@@ -5,3 +5,6 @@ mymodule.hello_world:
     _title: 'Hello world!'
   requirements:
     _permission: 'access content'
+
+route_callbacks:
+  - '\Drupal\mymodule\Routing\CustomRoutes::routes'

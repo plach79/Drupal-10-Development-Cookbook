@@ -1,0 +1,4 @@
+id,old_title,old_body,old_field_one,old_field_two,created_date
+1,foo,bar,11,12,"2019-12-11T12:24:56+02:00"
+2,bar,baz,21,22,"2020-07-01T12:24:56-07:00"
+3,baz,qux,31,32,"2021-02-23T12:24:56+03:00"

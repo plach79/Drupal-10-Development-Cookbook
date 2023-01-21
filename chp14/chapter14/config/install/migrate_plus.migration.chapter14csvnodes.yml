@@ -5,7 +5,7 @@ migration_group: default
 label: Old website articles.
 source:
   plugin: csv
-  path: /data/articles.csv
+  path: modules/custom/chapter14/data/articles.csv
   ids: [id]
   constants:
     uid: 1

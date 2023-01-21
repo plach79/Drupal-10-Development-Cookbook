@@ -5,7 +5,7 @@ migration_group: default
 label: Redirects
 source:
   plugin: csv
-  path: data/redirects.csv
+  path: modules/custom/chapter14/data/redirects.csv
   ids: [id]
   constants:
     uid: 1

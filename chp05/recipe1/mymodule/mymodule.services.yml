@@ -1,5 +1,5 @@
-# services:
-#   mymodule.route_subscriber:
-#   class: Drupal\mymodule\Routing\RouteSubscriber
-#   tags:
-#     - { name: event_subscriber }
+services:
+  mymodule.route_subscriber:
+    class: Drupal\mymodule\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

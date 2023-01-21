@@ -32,14 +32,14 @@ class RealNameDefaultWidget extends WidgetBase {
     $element['first_name'] = [
       '#type' => 'textfield',
       '#title' => t('First name'),
-      '#default_value' => '',
+      '#default_value' => $items->first_name ?: '',
       '#size' => 25,
       '#required' => $element['#required'],
     ];
     $element['last_name'] = [
       '#type' => 'textfield',
       '#title' => t('Last name'),
-      '#default_value' => '',
+      '#default_value' => $items->last_name ?: '',
       '#size' => 25,
       '#required' => $element['#required'],
     ];

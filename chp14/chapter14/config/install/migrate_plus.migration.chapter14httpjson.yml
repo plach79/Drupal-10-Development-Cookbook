@@ -2,11 +2,11 @@ id: chapter14httpjson
 label: Migrates external API data.
 migration_tags: {}
 migration_dependencies: {}
-migration_group: default 
+migration_group: default
 source:
   plugin: url
   urls:
-    - 'http://example.com/api/v1/content'
+    - 'http://localhost/modules/custom/chapter14/data/api.json'
   data_fetcher_plugin: http
   data_parser_plugin: json
   item_selector: data
@@ -15,17 +15,17 @@ source:
         name: id
         label: 'ID'
         selector: id
-  
+
       -
         name:  title
         label: 'Title'
         selector: title
-  
+
       -
         name: body
         label: 'Body content'
         selector: body
-  
+
       -
         name: archived
         label: 'Archived status'
