@@ -2,6 +2,7 @@ id: articles
 label: Migrates articles from the legacy database.
 migration_tags: { }
 migration_dependencies: { }
+migration_group: default
 source:
   plugin: legacy_articles
   key: migrate

@@ -27,7 +27,7 @@ class CamelCaseFormatterTest extends KernelTestBase {
    *
    * @var array
    */
-  public static $modules = [
+  protected static $modules = [
     'field',
     'text',
     'node',

@@ -18,7 +18,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *     "id",
  *     "label",
  *   },
- *   admin_permission = "administer message_type",
+ *   admin_permission = "administer message_types",
  *   handlers = {
  *     "list_builder" = "Drupal\mymodule\MessageTypeListBuilder",
  *     "form" = {

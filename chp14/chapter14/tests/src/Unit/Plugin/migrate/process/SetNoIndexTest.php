@@ -2,7 +2,7 @@
 
 namespace Drupal\Tests\chapter14\Unit\Plugin\migrate\process;
 
-use Drupal\nber_migration\Plugin\migrate\process\SetSpider;
+use Drupal\chapter14\Plugin\migrate\process\SetNoIndex;
 use Drupal\Tests\migrate\Unit\process\MigrateProcessTestCase;
 
 /**
@@ -13,7 +13,7 @@ class SetNoIndexTest extends MigrateProcessTestCase {
   /**
    * {@inheritdoc}
    */
-  protected function setUp() {
+  protected function setUp(): void {
     $this->plugin = new SetNoIndex([], 'set_no_index', []);
     parent::setUp();
   }

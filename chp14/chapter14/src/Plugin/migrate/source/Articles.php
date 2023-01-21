@@ -2,7 +2,6 @@
 
 namespace Drupal\chapter14\Plugin\migrate\source;
 
-use Drupal\migrate\Row;
 use Drupal\migrate\Plugin\migrate\source\SqlBase;
 
 /**
@@ -39,11 +38,11 @@ class Articles extends SqlBase {
    */
   public function fields() {
     return [
-      'id' => $this->->t('The article id.'),
-      'title' => $this->->t('The article title.'),
-      'body' => $this->->t('The article body content.'),
-      'is_published' => $this->->t('The published state.'),
-      'published_on' => $this->->t('The published date.'),
+      'id' => $this->t('The article id.'),
+      'title' => $this->t('The article title.'),
+      'body' => $this->t('The article body content.'),
+      'is_published' => $this->t('The published state.'),
+      'published_on' => $this->t('The published date.'),
       'no_index' => $this->t('Indicates this article should not be crawled.'),
     ];
   }

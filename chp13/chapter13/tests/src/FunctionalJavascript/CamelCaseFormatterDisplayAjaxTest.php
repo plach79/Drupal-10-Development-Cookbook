@@ -6,6 +6,7 @@ use Drupal\Core\Entity\Entity\EntityViewDisplay;
 use Drupal\field\Entity\FieldConfig;
 use Drupal\field\Entity\FieldStorageConfig;
 use Drupal\FunctionalJavascriptTests\WebDriverTestBase;
+use Drupal\Tests\node\Traits\ContentTypeCreationTrait;
 
 /**
  * Class CamelCaseFormatterDisplayAjaxTest
@@ -13,6 +14,8 @@ use Drupal\FunctionalJavascriptTests\WebDriverTestBase;
  * @package Drupal\Tests\chapter13\FunctionalJavascript
  */
 class CamelCaseFormatterDisplayAjaxTest extends WebDriverTestBase {
+
+  use ContentTypeCreationTrait;
 
   /**
    * @var bool Disable schema checking.
@@ -29,7 +32,7 @@ class CamelCaseFormatterDisplayAjaxTest extends WebDriverTestBase {
    *
    * @var array
    */
-  public static $modules = [
+  protected static $modules = [
     'field',
     'text',
     'node',
@@ -44,6 +47,8 @@ class CamelCaseFormatterDisplayAjaxTest extends WebDriverTestBase {
    */
   protected function setUp(): void {
     parent::setUp();
+
+    $this->createContentType(['type' => 'page']);
 
     // Create and store the field_chapter13_test field.
     FieldStorageConfig::create([

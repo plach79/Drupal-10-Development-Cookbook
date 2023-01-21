@@ -16,9 +16,15 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *   base_table = "message",
  *   entity_keys = {
  *     "id" = "message_id",
+ *     "revision" = "vid",
  *     "label" = "title",
  *     "uuid" = "uuid",
  *     "bundle" = "type",
+ *   },
+ *   revision_metadata_keys = {
+ *     "revision_user" = "revision_uid",
+ *     "revision_created" = "revision_timestamp",
+ *     "revision_log_message" = "revision_log"
  *   },
  *   admin_permission = "administer message",
  *   bundle_entity_type = "message_type",

@@ -9,7 +9,7 @@ function mymodule_form_system_site_information_settings_alter(array &$form, Form
     '#default_value' => \Drupal::config('system.site')->get('phone'),
   ];
 
-  $form['#submit'][] = 'mymodule_system_site_information_phone_submit';
+  array_unshift($form['#submit'], 'mymodule_system_site_information_phone_submit');
 }
 
 function mymodule_system_site_information_phone_submit(array &$form, FormStateInterface $form_state) {

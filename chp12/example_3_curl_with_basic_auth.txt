@@ -1,6 +1,5 @@
 curl \
     --header 'Accept: application/vnd.api+json' \
     --header 'Content-type: application/vnd.api+json' \
-    --header 'Authorization:Basic Y2hhcHRlcjEyOmNoYXB0ZX
-      IxMg==' \
+    --header 'Authorization:Basic Y2hhcHRlcjEyOmNoYXB0ZXIxMg==' \
   ... rest of request

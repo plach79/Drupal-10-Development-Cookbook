@@ -16,6 +16,7 @@ use Drupal\Core\Field\BaseFieldDefinition;
  *   base_table = "message",
  *   entity_keys = {
  *     "id" = "message_id",
+ *     "revision" = "vid",
  *     "label" = "title",
  *     "uuid" = "uuid",
  *   },

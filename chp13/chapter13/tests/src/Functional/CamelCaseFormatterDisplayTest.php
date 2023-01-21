@@ -29,7 +29,7 @@ class CamelCaseFormatterDisplayTest extends BrowserTestBase {
    *
    * @var array
    */
-  public static $modules = [
+  protected static $modules = [
     'field',
     'text',
     'node',

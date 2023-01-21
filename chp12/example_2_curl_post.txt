@@ -5,7 +5,7 @@ curl \
     --request POST https://localhost/jsonapi/node/article \
     --data-binary '{
   "data": {
-    "type": "node--article",Using POST to create data with JSON:API
+    "type": "node--article",
     "attributes": {
       "title": "New article created by chapter12",
       "body": {
